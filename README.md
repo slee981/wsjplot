@@ -12,6 +12,7 @@ overridden. Use in place of any `scales::label_choice()`.
 ## Quick Use 
 ```r 
 library(ggplot2)
+library(dplyr)
 `%>%` <- magrittr::`%>%`
 
 economics_long %>%
@@ -27,7 +28,7 @@ economics_long %>%
     theme_wsj() +
     labs(
         title = "Some Economics Plot",
-        caption = "Source: Not well documented.",
+        caption = "Source: Top secret.",
         y = ""
     )
 ```
