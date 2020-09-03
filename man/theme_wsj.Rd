@@ -2,18 +2,19 @@
 % Please edit documentation in R/theme_wsj.R
 \name{theme_wsj}
 \alias{theme_wsj}
-\title{Make timeseries graphs look like the the Wall Street Journal.}
+\title{Make timeseries graphs look like the the Wall Street Journal}
 \usage{
 theme_wsj()
 }
 \description{
-Make timeseries graphs look like the the Wall Street Journal.
+Make timeseries graphs look like the the Wall Street Journal
 }
 \examples{
 library(ggplot2)
 `\%>\%` <- magrittr::`\%>\%`
 
-  filter(variable \%in\% c("psavert", "uempmed")) \%>\%
+plt <- economics_long \%>\%
+  dplyr::filter(variable \%in\% c("psavert", "uempmed")) \%>\%
   ggplot(aes(date, value, color = variable)) +
   geom_line() +
   scale_y_continuous(
@@ -25,7 +26,7 @@ library(ggplot2)
   theme_wsj() +
   labs(
     title = "Some Economics Plot",
-    caption = "Source: Not well documented.",
+    caption = "Source: Top secret.",
     y = ""
   )
 

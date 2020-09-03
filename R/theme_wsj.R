@@ -1,4 +1,4 @@
-#' Make timeseries graphs look like the the Wall Street Journal.
+#' Make timeseries graphs look like the the Wall Street Journal
 #'
 #' @importFrom ggplot2 %+replace% theme_minimal theme element_blank element_text margin element_line unit
 #'
@@ -6,8 +6,8 @@
 #' library(ggplot2)
 #' `%>%` <- magrittr::`%>%`
 #'
-#  economics_long %>%
-#'   filter(variable %in% c("psavert", "uempmed")) %>%
+#' plt <- economics_long %>%
+#'   dplyr::filter(variable %in% c("psavert", "uempmed")) %>%
 #'   ggplot(aes(date, value, color = variable)) +
 #'   geom_line() +
 #'   scale_y_continuous(
@@ -19,7 +19,7 @@
 #'   theme_wsj() +
 #'   labs(
 #'     title = "Some Economics Plot",
-#'     caption = "Source: Not well documented.",
+#'     caption = "Source: Top secret.",
 #'     y = ""
 #'   )
 #'

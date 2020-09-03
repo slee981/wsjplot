@@ -8,15 +8,15 @@ i.e. display the units only on the top tick of the graph}
 label_wsj(prefix = "$", suffix = "", rm.bottom = TRUE, accuracy = NA, ...)
 }
 \arguments{
-\item{prefix}{the unit label to prefix on the max number of the y-axis}
+\item{prefix}{character, the unit label to prefix on the max number of the y-axis}
 
-\item{suffix}{the unit label to append on the max number of the y-axis}
+\item{suffix}{character, the unit label to append on the max number of the y-axis}
 
 \item{rm.bottom}{logical, remove the lowest number?}
 
-\item{...}{args passed to scales::label_comma(...)}
+\item{accuracy}{double, the precision for labels e.g. 1, 0.1, or 0.01}
 
-\item{breaks}{the axis marks for the graphs to label}
+\item{...}{args passed to scales::label_comma(...)}
 }
 \description{
 Label plots like the wall street journal
@@ -24,16 +24,19 @@ i.e. display the units only on the top tick of the graph
 }
 \examples{
 library(ggplot2)
-  filter(variable \%in\% c("psavert", "uempmed")) \%>\%
+`\%>\%` <- magrittr::`\%>\%`
+
+plt <- economics_long \%>\%
+  dplyr::filter(variable \%in\% c("psavert", "uempmed")) \%>\%
   ggplot(aes(date, value, color = variable)) +
   geom_line() +
   scale_y_continuous(
-      labels = label_wsj(prefix = "", suffix = " \%")
+      labels = label_wsj(prefix = "$", suffix = " \%")
   ) +
   theme_wsj() +
   labs(
     title = "Some Economics Plot",
-    caption = "Source: Not well documented."
+    caption = "Source: Top secret."
   )
 
 }

@@ -1,25 +1,27 @@
 #' Label plots like the wall street journal
 #' i.e. display the units only on the top tick of the graph
 #'
-#' @param breaks the axis marks for the graphs to label
-#' @param prefix the unit label to prefix on the max number of the y-axis
-#' @param suffix the unit label to append on the max number of the y-axis
+#' @param prefix character, the unit label to prefix on the max number of the y-axis
+#' @param suffix character, the unit label to append on the max number of the y-axis
 #' @param rm.bottom logical, remove the lowest number?
+#' @param accuracy double, the precision for labels e.g. 1, 0.1, or 0.01
 #' @param ... args passed to scales::label_comma(...)
 #'
 #' @examples
 #' library(ggplot2)
-#  economics_long %>%
-#'   filter(variable %in% c("psavert", "uempmed")) %>%
+#' `%>%` <- magrittr::`%>%`
+#'
+#' plt <- economics_long %>%
+#'   dplyr::filter(variable %in% c("psavert", "uempmed")) %>%
 #'   ggplot(aes(date, value, color = variable)) +
 #'   geom_line() +
 #'   scale_y_continuous(
-#'       labels = label_wsj(prefix = "", suffix = " %")
+#'       labels = label_wsj(prefix = "$", suffix = " %")
 #'   ) +
 #'   theme_wsj() +
 #'   labs(
 #'     title = "Some Economics Plot",
-#'     caption = "Source: Not well documented."
+#'     caption = "Source: Top secret."
 #'   )
 #'
 #' @export

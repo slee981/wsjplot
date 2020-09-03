@@ -15,6 +15,7 @@ Imports:
     ggplot2,
     magrittr,
     stringr,
-    scales
+    scales, 
+    dplyr
 Suggests: 
     testthat
