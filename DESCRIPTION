@@ -1,6 +1,6 @@
 Package: wsjplot
-Version: 0.1.0.9000
-Title: Style timeseries plots like the Wall Street Journal
+Version: 0.1.0
+Title: Style Timeseries Plots Like the Wall Street Journal
 Description: Style timeseries plots like the Wall Street Journal.
 Authors@R: 
     person("Stephen", "Lee", 

@@ -1,12 +1,12 @@
 # WSJ Plot
 
-Make ggplot graphs that look like the Wall street Journal. 
+Make ggplot graphs that look like the Wall Street Journal. 
 
 ## Functions 
 - `theme_wsj()`: Sets the default theme. Use as you would any `ggplot2::theme_choice()`.
 - `label_wsj()`: Formats y-axis ticks such that the top number on the graph 
 has the units, and the rest of the numbers are left visually clean. This 
-also removes the bottom most axis lable by default, although this can be 
+also removes the bottom most axis label by default, although this can be 
 overridden. Use in place of any `scales::label_choice()`.
 
 ## Quick Use 
