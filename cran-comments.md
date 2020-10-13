@@ -10,14 +10,8 @@ This is a resubmission. In this version I have:
 * Added single quotes around package names in the description. 
 
 ## R CMD check results
-There were no ERRORs or WARNINGs. 
+There were no ERRORs or WARNINGs or NOTEs. 
 
-There was 1 NOTES:
-  
-* checking top-level files ... NOTE
-  Non-standard file/directory found at top level:
-    ‘docs’
-    
 ## Comments
 The docs folder contains an example that's linked in the README. 
 
