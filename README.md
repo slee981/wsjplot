@@ -2,7 +2,7 @@
 
 Make ggplot graphs that look like the Wall Street Journal. 
 
-![](docs/figs/wsjplot_example.png?raw=True "Example using wsjplot")
+![](man/figures/wsjplot_example.png?raw=True "Example using wsjplot")
 
 ## Quick Use 
 
