@@ -12,10 +12,7 @@ This is a resubmission. In this version I have:
 ## R CMD check results
 There were no ERRORs or WARNINGs. 
 
-There was 2 NOTES:
-
-* checking for future file timestamps ... NOTE
-  unable to verify current time
+There was 1 NOTES:
   
 * checking top-level files ... NOTE
   Non-standard file/directory found at top level:
