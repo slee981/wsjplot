@@ -12,8 +12,5 @@ This is a resubmission. In this version I have:
 ## R CMD check results
 There were no ERRORs or WARNINGs or NOTEs. 
 
-## Comments
-The docs folder contains an example that's linked in the README. 
-
 ## Downstream dependencies
 No downstream dependencies yet. 
