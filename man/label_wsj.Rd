@@ -5,7 +5,14 @@
 \title{Label plots like the wall street journal
 i.e. display the units only on the top tick of the graph}
 \usage{
-label_wsj(prefix = "$", suffix = "", rm.bottom = TRUE, accuracy = NA, ...)
+label_wsj(
+  prefix = "$",
+  suffix = "",
+  rm.bottom = TRUE,
+  accuracy = NA,
+  reverse = FALSE,
+  ...
+)
 }
 \arguments{
 \item{prefix}{character, the unit label to prefix on the max number of the y-axis}
@@ -15,6 +22,8 @@ label_wsj(prefix = "$", suffix = "", rm.bottom = TRUE, accuracy = NA, ...)
 \item{rm.bottom}{logical, remove the lowest number?}
 
 \item{accuracy}{double, the precision for labels e.g. 1, 0.1, or 0.01}
+
+\item{reverse}{logical, put label on the smallest tick instead of the largest?}
 
 \item{...}{args passed to scales::label_comma(...)}
 }

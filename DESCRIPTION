@@ -1,5 +1,5 @@
 Package: wsjplot
-Version: 0.1.0
+Version: 0.1.1
 Title: Style Time Series Plots Like the Wall Street Journal
 Description: Easily override the default visual choices in 'ggplot2' to make 
     your time series plots look more like the Wall Street Journal. Specific 
