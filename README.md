@@ -24,6 +24,7 @@ install.packages("wsjplot")
        filter(variable %in% c("psavert", "uempmed")) %>%
        ggplot(aes(date, value, color = variable)) +
        geom_line() +
+       geom_hline(yintercept = 0, color = "darkgrey") +
        scale_y_continuous(
            labels = label_wsj(suffix = " M")
        ) +
