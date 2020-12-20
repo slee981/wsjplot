@@ -5,6 +5,16 @@ test_that("label prefix prepends to only the largest number", {
     expect_equal(new_lables[3], "$100")
 })
 
+test_that("label will reverse to second smallest number by default", {
+    new_lables <- label_wsj(reverse = TRUE)(c(0, 10, 100))
+    expect_equal(new_lables[2], "$10")
+})
+
+test_that("label will reverse to smallest number with rm.bottom", {
+    new_lables <- label_wsj(reverse = TRUE, rm.bottom = FALSE)(c(0, 10, 100))
+    expect_equal(new_lables[1], "$0")
+})
+
 test_that("label prefix prepends to only the largest number and ignores NA", {
     new_lables <- label_wsj()(c(0, 10, 100, NA))
     expect_equal(new_lables[3], "$100")

@@ -1,5 +1,5 @@
 ## Test environments
-* local OS X install, R 3.6.3
+* local OS X install, R 4.0.3
 * local windows 10 install, R 4.0.2
 * local ubuntu 20.04 install, R 3.6.3
 
@@ -12,4 +12,4 @@ There was 1 NOTE:
   unable to verify current time
 
 ## Downstream dependencies
-No downstream dependencies yet. 
+No downstream dependencies. 

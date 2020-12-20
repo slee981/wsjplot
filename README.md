@@ -7,7 +7,7 @@ Make ggplot graphs that look like the Wall Street Journal.
 ## Quick Use 
 
 ### Install from CRAN 
-Coming soon... 
+install.packages("wsjplot")
 
 ### Install from GitHub
 ```r
@@ -27,7 +27,8 @@ Coming soon...
        scale_y_continuous(
            labels = label_wsj(suffix = " M")
        ) +
-       scale_color_discrete(
+       scale_color_manual(
+           values = c("red", "blue"),
            labels = c("Series 1", "Series 2")
        ) +
        theme_wsj() +
