@@ -7,7 +7,9 @@ Make ggplot graphs that look like the Wall Street Journal.
 ## Quick Use 
 
 ### Install from CRAN 
+```r
 install.packages("wsjplot")
+```
 
 ### Install from GitHub
 ```r
