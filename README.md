@@ -13,7 +13,7 @@ Make ggplot graphs that look like the Wall Street Journal.
 
 ### Install from GitHub
 ```r
- > devtools::install_github("slee981/wsjplot")
+> devtools::install_github("slee981/wsjplot")
 ```
 
 ### Make plot 
